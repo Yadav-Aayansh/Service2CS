@@ -2,7 +2,7 @@ from flask import Flask, request, redirect, jsonify, make_response
 import requests
 
 app = Flask(__name__)
-AUTH_SERVER = 'https://centralserver.onrender.com'  # Auth server URL
+AUTH_SERVER = 'https://centralserver-nxwp.onrender.com'  # Auth server URL
 
 @app.route('/dashboard')
 def dashboard():
