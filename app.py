@@ -8,7 +8,7 @@ AUTH_SERVER = 'https://centralserver-nxwp.onrender.com'  # Central server URL
 @app.route('/')
 def home():
     return '''
-        <h1> Home </h1>
+        <h1> Home - Service 2 </h1>
         <br>
         <a href="/dashboard"> Dashboard </a>
     '''
