@@ -10,7 +10,7 @@ def dashboard():
     token = request.cookies.get('session_token')
     if not token:
         # No token, redirect to the auth server for login
-        return redirect(f'{AUTH_SERVER}/login?service=https://noctiservice2.vercel.app/dashboard')
+        return redirect(f'{AUTH_SERVER}/login?service=https://service1-cs.vercel.app/dashboard')
     
     # Verify the token with the auth server
     response = requests.post(f'{AUTH_SERVER}/verify-token', data={'token': token})
